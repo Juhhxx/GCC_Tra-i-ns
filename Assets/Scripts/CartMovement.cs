@@ -5,6 +5,7 @@ using UnityEngine;
 public class CartMovement : MonoBehaviour
 {
     [SerializeField] private Animator anim;
+    private Animator animSelf;
     private Rigidbody2D rg;
 
     [SerializeField] private float decelaration = 5;
@@ -16,7 +17,7 @@ public class CartMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //anim = GetComponent<Animator>();
+        animSelf = GetComponent<Animator>();
         rg = GetComponent<Rigidbody2D>();
         
     }
@@ -24,6 +25,7 @@ public class CartMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (velocityX > 0f) 
         {
             velocityX -= decelaration;
