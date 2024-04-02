@@ -33,7 +33,8 @@ public class CartMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.F))
         {
-            anim.Play("pulley_left");
+            //anim.Play("pulley_left");
+            anim.SetTrigger("left");
             keysPressed.Add("Left");
             keysPressed.RemoveAt(0);
             if (keysPressed[0] != keysPressed[1])
@@ -44,7 +45,8 @@ public class CartMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.K))
         {
-            anim.Play("pulley_right");
+            //anim.Play("pulley_right");
+            anim.SetTrigger("right");
             keysPressed.Add("Right");
             keysPressed.RemoveAt(0);
             if (keysPressed[0] != keysPressed[1])
