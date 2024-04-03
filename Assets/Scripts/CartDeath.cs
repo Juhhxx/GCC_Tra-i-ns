@@ -16,7 +16,7 @@ public class CartDeath : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.D))
         {
-            anim.Play("death");
+            anim.SetTrigger("dead");
         }
         
     }

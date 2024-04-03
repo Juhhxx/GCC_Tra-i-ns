@@ -4,20 +4,20 @@ using UnityEngine;
 
 public class CartMovement : MonoBehaviour
 {
-    [SerializeField] private Animator anim;
+    private Animator anim;
     private Animator animSelf;
     private Rigidbody2D rg;
 
-    [SerializeField] private float decelaration = 5;
+    [SerializeField] private float decelaration = 0.2f;
     [SerializeField] private float accelaration = 10;
-    [SerializeField] private float maxVelocity = 100f;
+    [SerializeField] private float maxVelocity = 150f;
     private float velocityX = 0f;
     private List<string> keysPressed = new List<string>() { "Left", "Right" };
 
     // Start is called before the first frame update
     void Start()
     {
-        animSelf = GetComponent<Animator>();
+        anim = GetComponent<Animator>();
         rg = GetComponent<Rigidbody2D>();
         
     }
@@ -33,7 +33,6 @@ public class CartMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.F))
         {
-            //anim.Play("pulley_left");
             anim.SetTrigger("left");
             keysPressed.Add("Left");
             keysPressed.RemoveAt(0);
@@ -45,7 +44,6 @@ public class CartMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.K))
         {
-            //anim.Play("pulley_right");
             anim.SetTrigger("right");
             keysPressed.Add("Right");
             keysPressed.RemoveAt(0);
