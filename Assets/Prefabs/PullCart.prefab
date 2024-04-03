@@ -352,6 +352,7 @@ GameObject:
   - component: {fileID: 211980281297664080}
   - component: {fileID: 4751285137477550314}
   - component: {fileID: 3989594672211754356}
+  - component: {fileID: 5197252845159316142}
   m_Layer: 0
   m_Name: PullCart
   m_TagString: Untagged
@@ -568,3 +569,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f510e4fd9144f64e80b16ab5fad49ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5197252845159316142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7752374682734303224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5a9d762dbaea3049a46b8de623cd10a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  winTr: {fileID: 0}
+  playerWin: 0

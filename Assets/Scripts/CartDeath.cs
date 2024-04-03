@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CartDeath : MonoBehaviour
 {
+    [SerializeField] private GameObject menu;
     private Animator anim;
     // Start is called before the first frame update
     void Start()
@@ -14,7 +15,7 @@ public class CartDeath : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.D))
+        if (transform.position.y < -100)
         {
             anim.SetTrigger("dead");
         }
@@ -23,6 +24,7 @@ public class CartDeath : MonoBehaviour
 
     void Death()
     {
+        menu.SetActive(true);
         Destroy(gameObject);
     }
 }

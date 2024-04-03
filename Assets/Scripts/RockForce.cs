@@ -6,6 +6,8 @@ public class RockForce : MonoBehaviour
 {
     private Rigidbody2D rb;
     [SerializeField] private float rollSpeed = 90f;
+    [SerializeField] private GameObject trSlow;
+    [SerializeField] private CircleCollider2D col;
 
     // Start is called before the first frame update
     void Start()
@@ -22,4 +24,12 @@ public class RockForce : MonoBehaviour
         rb.velocity = velocity;
 
     }
+    private void OnTriggerExit2D(Collider2D col)
+    {
+        if (col.name == trSlow.name)
+        {
+            rollSpeed = 0f;
+        }
+    }
+
 }

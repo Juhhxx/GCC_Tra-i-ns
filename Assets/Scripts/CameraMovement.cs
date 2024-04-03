@@ -6,6 +6,8 @@ using UnityEngine;
 public class CameraMovement : MonoBehaviour
 {
     [SerializeField] private Transform target;
+    [SerializeField] private Transform winTarget;
+    [SerializeField] private PlayerWin win;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +17,13 @@ public class CameraMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(target.position.x, target.position.y, transform.position.z);
+        if (win.playerWin)
+        {
+            transform.position = new Vector3(winTarget.position.x, transform.position.y, transform.position.z);
+        }
+        else
+        {
+            transform.position = new Vector3(target.position.x, target.position.y, transform.position.z);
+        }
     }
 }

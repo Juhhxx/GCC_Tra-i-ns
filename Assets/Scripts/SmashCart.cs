@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class SmashCart : MonoBehaviour
 {
-    [SerializeField] GameObject cart;
-    [SerializeField] Animator animC;
-    [SerializeField] CircleCollider2D col;
+    [SerializeField] private GameObject cart;
+    [SerializeField] private Animator animC;
+    [SerializeField] private CircleCollider2D col;
     // Start is called before the first frame update
     void Start()
     {
