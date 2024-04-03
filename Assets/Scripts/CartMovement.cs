@@ -8,6 +8,9 @@ public class CartMovement : MonoBehaviour
     private Animator animSelf;
     private Rigidbody2D rg;
 
+    [SerializeField] private KeyCode leftKey;
+    [SerializeField] private KeyCode rightKey;
+
     [SerializeField] private float decelaration = 0.2f;
     [SerializeField] private float accelaration = 10;
     [SerializeField] private float maxVelocity = 150f;
@@ -31,7 +34,7 @@ public class CartMovement : MonoBehaviour
             velocityX -= decelaration;
         }
 
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(leftKey))
         {
             anim.SetTrigger("left");
             keysPressed.Add("Left");
@@ -42,7 +45,7 @@ public class CartMovement : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.K))
+        if (Input.GetKeyDown(rightKey))
         {
             anim.SetTrigger("right");
             keysPressed.Add("Right");

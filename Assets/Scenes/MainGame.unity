@@ -4733,6 +4733,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 705187597}
     - target: {fileID: 4751285137477550314, guid: 2a7676343eefb044b81843b9287c5770, type: 3}
+      propertyPath: leftKey
+      value: 97
+      objectReference: {fileID: 0}
+    - target: {fileID: 4751285137477550314, guid: 2a7676343eefb044b81843b9287c5770, type: 3}
+      propertyPath: rightKey
+      value: 108
+      objectReference: {fileID: 0}
+    - target: {fileID: 4751285137477550314, guid: 2a7676343eefb044b81843b9287c5770, type: 3}
       propertyPath: maxVelocity
       value: 150
       objectReference: {fileID: 0}
@@ -5325,7 +5333,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -4
+  m_SortingOrder: -5
   m_Sprite: {fileID: 21300000, guid: 91253ac0f9f71ea4e98db8b898c7f7ae, type: 3}
   m_Color: {r: 0.3018868, g: 0.3018868, b: 0.3018868, a: 1}
   m_FlipX: 0
@@ -8726,7 +8734,7 @@ PrefabInstance:
       objectReference: {fileID: 650342958}
     - target: {fileID: 8707888447080511447, guid: 87f1dfb55a1ae744db537cef99fa9b96, type: 3}
       propertyPath: rollSpeed
-      value: 100
+      value: 110
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9729,7 +9737,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -4
+  m_SortingOrder: -5
   m_Sprite: {fileID: 21300000, guid: 91253ac0f9f71ea4e98db8b898c7f7ae, type: 3}
   m_Color: {r: 0.3018868, g: 0.3018868, b: 0.3018868, a: 1}
   m_FlipX: 0
@@ -14783,7 +14791,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -4
+  m_SortingOrder: -5
   m_Sprite: {fileID: 21300000, guid: 91253ac0f9f71ea4e98db8b898c7f7ae, type: 3}
   m_Color: {r: 0.3018868, g: 0.3018868, b: 0.3018868, a: 1}
   m_FlipX: 0
@@ -29236,7 +29244,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -4
+  m_SortingOrder: -5
   m_Sprite: {fileID: 21300000, guid: 91253ac0f9f71ea4e98db8b898c7f7ae, type: 3}
   m_Color: {r: 0.3018868, g: 0.3018868, b: 0.3018868, a: 1}
   m_FlipX: 0
