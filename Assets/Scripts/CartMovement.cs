@@ -29,10 +29,7 @@ public class CartMovement : MonoBehaviour
     void Update()
     {
 
-        if (velocityX > 0f) 
-        {
-            velocityX -= decelaration;
-        }
+        
 
         if (Input.GetKeyDown(leftKey))
         {
@@ -66,5 +63,12 @@ public class CartMovement : MonoBehaviour
         Debug.Log($"Velocity: {velocity.x}");
         rg.velocity = velocity;
 
+    }
+    private void FixedUpdate()
+    {
+        if (velocityX > 0f)
+        {
+            velocityX -= decelaration;
+        }
     }
 }
